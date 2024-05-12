@@ -83,7 +83,7 @@ def make_mail_list(id, password) :
     return tmp
 
 
-def delete_mail(ids, id = 'gktjrgus8@gmail.com', password = 'yimnwkfnqrflsgxd') : 
+def delete_mail(ids, id, password) : 
     
     imap_obj = imapclient.IMAPClient('imap.gmail.com', ssl=True)
     imap_obj.login(id, password)
@@ -93,7 +93,7 @@ def delete_mail(ids, id = 'gktjrgus8@gmail.com', password = 'yimnwkfnqrflsgxd') 
     
     return 0
     
-def check_mail(ids, id = 'gktjrgus8@gmail.com', password = 'yimnwkfnqrflsgxd') :
+def check_mail(ids, id, password) :
     
     imap_obj = imapclient.IMAPClient('imap.gmail.com', ssl=True)
     imap_obj.login(id, password)
