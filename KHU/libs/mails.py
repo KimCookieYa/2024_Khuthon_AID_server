@@ -22,7 +22,7 @@ def cleasing(text):
 
 
 
-def make_mail_list(id = 'gktjrgus8@gmail.com', password = 'yimnwkfnqrflsgxd') :
+def make_mail_list(id, password) :
     imap_obj = imapclient.IMAPClient('imap.gmail.com', ssl=True)
     imap_obj.login(id, password)
     imap_obj.select_folder('INBOX')
